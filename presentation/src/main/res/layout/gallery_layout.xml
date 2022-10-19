@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:context = ".fragment.gallery.GalleryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/galleryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/warningEmptyAnimalList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/warning_empty_animal_list"
+        android:textAlignment="center"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/deleteAllGalleryAnimal"
+        style="@style/MainButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="@string/cleare_gallery"
+        android:visibility="gone"
+        app:backgroundTint="@null"
+        tools:visibility="visible" />
+
+</LinearLayout>

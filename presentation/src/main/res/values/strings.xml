@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sender of dataCats and dataDucks</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gallery_layout_header">Галлерея животных</string>
+    <string name="close_up_header">Картинка животного</string>
+    <string name="main_menu_header">Главное меню</string>
+    <string name="gallery_string">Gallery</string>
+    <string name="openCollectionButtonString">Галлерея сохраненных животных</string>
+    <string name="genereteDuckString">Хочу утку</string>
+    <string name="generateCatString">Хочу кота</string>
+    <string name="exitString">Выход</string>
+    <string name="descriptGeneretaImage">generete pickture</string>
+    <string name="save_animal">save animal</string>
+    <string name="delete_string">Удалить</string>
+    <string name="selected_animal_picture_string">seleсtedAnimalPicture</string>
+    <string name="delete_image">delete image</string>
+    <string name="preview_animal">preview animal</string>
+    <string name="error_find_cat"> "К сожалению все коты куда-то убежали, возможно, их стоит поискать позже:(" </string>
+    <string name="error_find_duck"> "К сожалению все уточки куда-то убежали, возможно, их стоит поискать позже:(" </string>
+    <string name="empty_string" />
+    <string name="warning_empty_animal_list">В данный момент, у вас нет сохраненных картинок!</string>
+    <string name="cleare_gallery">Очистить галлерею</string>
+    <string name="save_data_string">Дата добавления: %s</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_nonactive_button"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.mainMenu.MainMenuFragment">
+
+    <ToggleButton
+        android:id="@+id/saveAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_like"
+        android:contentDescription="@string/save_animal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textOff="@string/empty_string"
+        android:textOn="@string/empty_string"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/animalPictureMainMenu"
+        app:layout_constraintEnd_toEndOf="@+id/animalPictureMainMenu"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/animalPictureMainMenu"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_frame_image_visible"
+        android:contentDescription="@string/descriptGeneretaImage"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@tools:sample/avatars"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressGenerateAnimal"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/animalPictureMainMenu"
+        app:layout_constraintEnd_toEndOf="@+id/animalPictureMainMenu"
+        app:layout_constraintStart_toStartOf="@+id/animalPictureMainMenu"
+        app:layout_constraintTop_toTopOf="@+id/animalPictureMainMenu"
+        tools:visibility="visible" />
+
+    <ToggleButton
+        android:id="@+id/generateDuck"
+        style="@style/MainButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_in"
+        android:drawableLeft="@drawable/ic_selector_duck"
+        android:textOff="@string/genereteDuckString"
+        android:textOn="@string/genereteDuckString"
+        android:visibility="visible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/generateCat"
+        app:layout_constraintEnd_toEndOf="@+id/openCollection"
+        app:layout_constraintStart_toEndOf="@+id/borderGeneratePicMainMenu"
+        app:layout_constraintTop_toTopOf="@+id/generateCat" />
+
+    <Space
+        android:id="@+id/borderGeneratePicMainMenu"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openCollection" />
+
+    <Button
+        android:id="@+id/exitMainMenu"
+        style="@style/MainButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTintMode="add"
+        android:text="@string/exitString"
+        android:visibility="visible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generateCat"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/openCollection"
+        style="@style/MainButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTintMode="add"
+        android:drawableLeft="@drawable/ic_selector_gallery"
+        android:text="@string/openCollectionButtonString"
+        android:visibility="visible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalPictureMainMenu" />
+
+    <ToggleButton
+        android:id="@+id/generateCat"
+        style="@style/MainButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTintMode="src_in"
+        android:drawableLeft="@drawable/ic_selector_cat"
+        android:pointerIcon="arrow"
+        android:textOff="@string/generateCatString"
+        android:textOn="@string/generateCatString"
+        android:visibility="visible"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/borderGeneratePicMainMenu"
+        app:layout_constraintStart_toStartOf="@+id/openCollection"
+        app:layout_constraintTop_toBottomOf="@+id/borderGeneratePicMainMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

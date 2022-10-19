@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:startColor="@color/background_nonactive_button"
+        android:endColor="@color/background_nonactive_button"/>
+
+    <stroke
+        android:color="@color/stroke_nonactive_button"
+        android:width="2dp"/>
+
+    <corners
+        android:radius="60dp"/>
+
+</shape>

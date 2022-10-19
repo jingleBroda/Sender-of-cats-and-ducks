@@ -1,0 +1,3 @@
+package com.jinglebroda.presentation.fragment.gallery.adapter.adapterModel
+
+abstract class BasicGalleryAdapterModel
