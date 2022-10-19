@@ -26,4 +26,6 @@ ____
 ![navigationGraph](gitPicture/navigation.png)
 _____
 ## Удаление конкретной картинки с экрана Галлереи
-При длительном удержании картинки будет появляться крестик, по нажатию на который будет удалена картинка.![navigationGraph](gitPicture/galleryDeletePicture.jpg)
+При длительном удержании картинки будет появляться крестик, по нажатию на который будет удалена картинка.
+
+![navigationGraph](gitPicture/galleryDeletePicture.jpg)
